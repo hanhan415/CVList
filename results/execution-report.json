@@ -1,0 +1,162 @@
+{
+  "run_at": "2026-10-28T02:34:38.704Z",
+  "runtime": "Node v22.23.2",
+  "tasks": [
+    {
+      "id": "01",
+      "task": "分类",
+      "script": "scripts/01_classification.mjs",
+      "exit_code": 0,
+      "seconds": 1.588
+    },
+    {
+      "id": "02",
+      "task": "回归",
+      "script": "scripts/02_quality_regression.py",
+      "exit_code": 0,
+      "seconds": 0.818
+    },
+    {
+      "id": "03",
+      "task": "目标检测",
+      "script": "scripts/03_detection.mjs",
+      "exit_code": 0,
+      "seconds": 5.622
+    },
+    {
+      "id": "04",
+      "task": "图像分割",
+      "script": "scripts/04_segmentation.mjs",
+      "exit_code": 0,
+      "seconds": 1.418
+    },
+    {
+      "id": "06",
+      "task": "深度估计",
+      "script": "scripts/06_depth_estimation.mjs",
+      "exit_code": 0,
+      "seconds": 1.895
+    },
+    {
+      "id": "09",
+      "task": "多目标跟踪",
+      "script": "scripts/09_multi_object_tracking.mjs",
+      "exit_code": 0,
+      "seconds": 19.125
+    },
+    {
+      "id": "10",
+      "task": "变化检测",
+      "script": "scripts/10_change_detection.mjs",
+      "exit_code": 0,
+      "seconds": 2.543
+    },
+    {
+      "id": "12",
+      "task": "图像描述",
+      "script": "scripts/12_captioning.mjs",
+      "exit_code": 0,
+      "seconds": 5.382
+    },
+    {
+      "id": "14",
+      "task": "指称表述定位",
+      "script": "scripts/14_referring_grounding.mjs",
+      "exit_code": 0,
+      "seconds": 5.072
+    },
+    {
+      "id": "15",
+      "task": "图文检索",
+      "script": "scripts/15_image_text_retrieval.mjs",
+      "exit_code": 0,
+      "seconds": 1.503
+    },
+    {
+      "id": "16",
+      "task": "指称表述分割",
+      "script": "scripts/16_referring_segmentation.mjs",
+      "exit_code": 0,
+      "seconds": 5.716
+    }
+  ],
+  "skipped": [
+    {
+      "status": "skipped",
+      "id": "05",
+      "group": 2,
+      "name": "图像匹配",
+      "english": "Image Matching",
+      "input": "图像 A ＋ 图像 B",
+      "output": "对应点或对齐结果",
+      "example": "输入不同角度的建筑照片 → 找出相同窗户、墙角的对应点",
+      "reason": "新增任务尚未配置已训练的匹配模型和多视角样例；本页不以手工连线或随机对应点充当结果。"
+    },
+    {
+      "id": "07",
+      "name": "三维重建",
+      "status": "skipped",
+      "reason": "完整重建还需多视角数据与相机/几何处理。当前相对深度模型不能代替完整重建，本次未新增重建模型和数据。",
+      "group": 2,
+      "english": "3D Reconstruction",
+      "input": "多视角图像",
+      "output": "三维模型",
+      "example": "从不同角度拍摄雕像 → 重建可旋转观察的 3D 模型"
+    },
+    {
+      "id": "08",
+      "name": "多光谱视觉感知",
+      "status": "skipped",
+      "reason": "需要真实多波段图像、波段定义和对应任务的已训练权重。本次没有配套输入与模型，保留任务入口，不把普通 RGB 伪装为多光谱。",
+      "group": 2,
+      "english": "Multispectral Visual Perception",
+      "input": "RGB ＋ 近红外等波段",
+      "output": "分类、检测或分割结果",
+      "example": "输入城市多光谱图像 → 分割道路、屋顶、水体等区域"
+    },
+    {
+      "status": "skipped",
+      "id": "11",
+      "group": 3,
+      "name": "视频时刻定位",
+      "english": "Video Temporal Grounding",
+      "input": "视频 ＋ 文字描述",
+      "output": "对应片段的起止时间",
+      "example": "输入视频和“有人摔倒” → 输出对应片段的起止时间",
+      "reason": "新增任务尚未配置视频文本时刻定位模型；已有逐帧检测不等于输出文字描述对应的起止时间。"
+    },
+    {
+      "id": "13",
+      "name": "视觉问答",
+      "status": "skipped",
+      "reason": "已选 Florence-2 不是通用 VQA 模型；未为此增加额外视觉语言模型，不用检测计数冒充通用问答。",
+      "group": 4,
+      "english": "Visual Question Answering",
+      "input": "图像 ＋ 问题",
+      "output": "答案",
+      "example": "输入照片并问“左边有几辆车？” → 回答数量"
+    },
+    {
+      "id": "17",
+      "name": "文生图",
+      "status": "skipped",
+      "reason": "为节约存储和 CPU 时间，未下载扩散生成模型；不使用 tiny-random 测试权重冒充可用生成器。",
+      "group": 5,
+      "english": "Text-to-Image Generation",
+      "input": "文字描述",
+      "output": "生成图像",
+      "example": "输入“雨夜中灯火通明的城市街道” → 生成对应场景"
+    },
+    {
+      "id": "18",
+      "name": "图像编辑与转换",
+      "status": "skipped",
+      "reason": "额外编辑模型较大，本次未下载；不以滤镜或手工绘图冒充指令编辑。",
+      "group": 5,
+      "english": "Image Editing & Translation",
+      "input": "图像 ＋ 可选文字指令",
+      "output": "新图像",
+      "example": "输入白天街景，要求“改成夜晚” → 得到夜景图"
+    }
+  ]
+}

@@ -67,8 +67,8 @@ npm run verify:web
 | `index.html`、`web/dist/index.html` | 构建生成的两个相同网页文件 |
 | `verify-web.mjs` | 网页内容、内嵌资源、内部链接和导航状态检查 |
 | `serve.mjs` | 本地预览服务 |
-| `site/` | 本机现有静态部署仓库及托管配置，不纳入 GitHub 源码仓库 |
-| `outputs/site-deployment.json` | 本机部署信息记录，不纳入 GitHub 源码仓库 |
+| `site/` | 静态部署网页及托管配置；本机独立仓库的 `.git` 元数据不上传 |
+| `outputs/site-deployment.json` | 现有部署信息记录 |
 | `scripts/`、其余 `lib/` 模块 | 可选的模型推理示例与共享工具 |
 
 修改正文或数据后，运行 `npm run build:web`，再运行 `npm run verify:web`。不要只编辑生成的 HTML，否则下次构建会覆盖修改。
@@ -97,7 +97,7 @@ npm run verify:web
 
 首次执行 `setup` 需要联网下载选定的模型和素材；推理使用本地模型文件。`--all` 只运行已实现的 11 项任务。附加的 `scripts/extra_image_retrieval.mjs` 提供以图搜图示例。各任务脚本支持 `--help`，可查看输入和输出参数。
 
-模型与输入素材的来源、版本和摘要记录在 `sources.lock.json`；公开示例及农业图像的下载记录分别位于 `assets/public-examples/downloads.json` 和 `assets/agriculture/downloads.json`。`.cache/`、`.tmp/`、`node_modules/`、`models/` 和 `.python/` 是缓存、依赖或运行环境目录，按需生成。
+模型与输入素材的来源、版本和摘要记录在 `sources.lock.json`；公开示例及农业图像的下载记录分别位于 `assets/public-examples/downloads.json` 和 `assets/agriculture/downloads.json`。`.cache/`、`.tmp/`、`node_modules/`、`models/` 和 `.python/` 是缓存、依赖或运行环境目录，按需生成。本仓库按完整项目快照保存现有依赖、缓存日志、检查报告和部署文件；Git 内部元数据与空目录不纳入版本管理。已提交的 `node_modules/` 包含 Windows x64 二进制，在其他系统上使用时应重新执行 `npm ci` 安装适用的依赖。
 
 理解结果时需注意：深度估计输出相对深度；质量回归输出原始分数；检索相似度不是概率。语义分割不区分同类独立实例，跟踪与变化检测为基础实现。公开素材和保存的推理结果用于解释任务，不代表数据集精度评估或研究结论。
 

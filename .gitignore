@@ -1,18 +1,3 @@
-node_modules/
-models/
-.npm-cache/
-.python/
-*.part
-__pycache__/
-.cache/
-.tmp/
-work/
-outputs/
-site/
-results/execution-report.json
-results/verification.json
-results/storage-report.json
-results/web-verification.json
-.env
-.env.*
-!.env.example
+# Keep all project files, dependencies and generated outputs in the repository.
+# Git internal metadata belongs to each local repository.
+.git/

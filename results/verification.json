@@ -1,0 +1,65 @@
+{
+  "checked_at": "2026-10-28T03:12:10.206Z",
+  "actual_model_outputs_checked": 11,
+  "tasks": [
+    {
+      "id": "01",
+      "name": "分类",
+      "status": "passed"
+    },
+    {
+      "id": "02",
+      "name": "回归",
+      "status": "passed"
+    },
+    {
+      "id": "03",
+      "name": "目标检测",
+      "status": "passed"
+    },
+    {
+      "id": "04",
+      "name": "图像分割",
+      "status": "passed"
+    },
+    {
+      "id": "06",
+      "name": "深度估计",
+      "status": "passed"
+    },
+    {
+      "id": "09",
+      "name": "多目标跟踪",
+      "status": "passed"
+    },
+    {
+      "id": "10",
+      "name": "变化检测",
+      "status": "passed"
+    },
+    {
+      "id": "12",
+      "name": "图像描述",
+      "status": "passed"
+    },
+    {
+      "id": "14",
+      "name": "指称表述定位",
+      "status": "passed"
+    },
+    {
+      "id": "15",
+      "name": "图文检索",
+      "status": "passed"
+    },
+    {
+      "id": "16",
+      "name": "指称表述分割",
+      "status": "passed"
+    }
+  ],
+  "notes": [
+    "Verifies included public examples; not a dataset benchmark or an accuracy claim.",
+    "For custom inputs, zero detections or segmentation failure can be legitimate model outputs."
+  ]
+}

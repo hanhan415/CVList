@@ -1,0 +1,12 @@
+{
+  "project_id": "appgprj_6ae19825d7c4819185ee1ac4f186d20a",
+  "version_id": "appgprj_6ae19825d7c4819185ee1ac4f186d20a~appgver_e3b91cc97fc881919e8e1037f385d9ba",
+  "deployment_id": "appgdep_6ae94930b8c081919256d2e805b3f810",
+  "status": "succeeded",
+  "url": "https://cvlist-bigenguo.bbg1234562026.chatgpt.site",
+  "access_mode": "public",
+  "source_commit": "9d145c57e9601d328a21a82779535044090a8554",
+  "local_source_directory": "D:\\project\\CVList\\site",
+  "updated_at": "2026-11-03T02:38:52.368788+00:00",
+  "version_number": 11
+}
