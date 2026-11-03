@@ -1,0 +1,27 @@
+{
+  "model": "Xenova/clip-vit-base-patch32",
+  "revision": "d15189d7028b43f1d3e65039190477f6af591c2a",
+  "weight_format": "trained ONNX; q8 except quality FP32",
+  "device": "CPU",
+  "task": "zero-shot image classification",
+  "input": "D:\\project\\CVList\\assets\\car.jpg",
+  "predictions": [
+    {
+      "label": "car",
+      "probability": 0.9746646741841225
+    },
+    {
+      "label": "house",
+      "probability": 0.01804371687219204
+    },
+    {
+      "label": "cat",
+      "probability": 0.003919301501282514
+    },
+    {
+      "label": "dog",
+      "probability": 0.0033723074424029803
+    }
+  ],
+  "note": "Probabilities are relative to the supplied candidate labels."
+}

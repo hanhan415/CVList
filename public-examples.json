@@ -1,0 +1,127 @@
+{
+  "05": {
+    "kind": "author-model-result",
+    "text": "不同角度的建筑照片 → 找到相同位置的对应点。绿色连线是 LightGlue 作者公开的匹配结果。",
+    "source_name": "LightGlue 作者项目",
+    "source_url": "https://github.com/cvg/LightGlue",
+    "figures": [
+      {
+        "file": "assets/public-examples/lightglue.webp",
+        "caption": "两组建筑图像的特征匹配结果"
+      }
+    ]
+  },
+  "07": {
+    "kind": "author-model-result",
+    "text": "围绕同一台乐高推土机拍摄多个视角 → 建立三维场景表示 → 从新的相机位置观察这台推土机。",
+    "source_name": "NeRF 作者项目",
+    "source_url": "https://github.com/bmild/nerf",
+    "figures": [
+      {
+        "file": "assets/public-examples/nerf-view-1.webp",
+        "caption": "新视角渲染 A：观察铲斗与车身"
+      },
+      {
+        "file": "assets/public-examples/nerf-view-2.webp",
+        "caption": "新视角渲染 B：观察车身侧面与履带"
+      },
+      {
+        "file": "assets/public-examples/nerf-view-3.webp",
+        "caption": "新视角渲染 C：观察另一侧的遮挡关系"
+      }
+    ],
+    "details": [
+      {
+        "label": "输入",
+        "text": "覆盖同一静态场景的多张照片及对应相机位姿，提供不同方向的外观与遮挡信息。"
+      },
+      {
+        "label": "重建",
+        "text": "NeRF 学习场景空间中的颜色与体密度，形成可从不同方向渲染的三维辐射场。"
+      },
+      {
+        "label": "输出",
+        "text": "给定新的观察位置，生成对应视角的图像；连续改变相机位置，可得到环绕场景的视频。"
+      },
+      {
+        "label": "观察重点",
+        "text": "观察铲斗、驾驶室与履带的位置关系：视角改变时，物体遮挡、透视和可见侧面会随之变化。"
+      }
+    ],
+    "animation": {
+      "file": "assets/public-examples/nerf-orbit.webp",
+      "caption": "NeRF 场景的连续环绕视角渲染（作者结果）"
+    }
+  },
+  "08": {
+    "kind": "official-dataset-example",
+    "text": "同一街景的 RGB、近红外与偏振图像 → 按材料划分不同区域。下面是 MCubeS 官方数据示例，最右侧为人工标注。",
+    "source_name": "MCubeS 官方数据集",
+    "source_url": "https://github.com/kyotovision-public/multimodal-material-segmentation#details-of-mcubes-dataset",
+    "figures": [
+      {
+        "file": "assets/public-examples/mcubes-input.webp",
+        "caption": "RGB / 近红外 / 偏振角 / 偏振度 / 材料分割标注"
+      }
+    ]
+  },
+  "11": {
+    "kind": "published-prediction-example",
+    "text": "输入视频和“Chef makes pizza and cuts it up.”（厨师制作并切分披萨）→ 定位相应时间片段。",
+    "source_name": "Moment-DETR 作者公开运行示例",
+    "source_url": "https://github.com/jayleicn/moment_detr#run-predictions-on-your-own-videos-and-queries",
+    "prediction": {
+      "rank": 3,
+      "start": 105.9434,
+      "end": 122.0372,
+      "ground_truth_start": 106,
+      "ground_truth_end": 122
+    },
+    "figures": [
+      {
+        "file": "assets/public-examples/moment-detr-1.webp",
+        "caption": "同一官方样例视频的第 108 秒"
+      },
+      {
+        "file": "assets/public-examples/moment-detr-2.webp",
+        "caption": "同一官方样例视频的第 120 秒"
+      }
+    ]
+  },
+  "13": {
+    "kind": "official-input-reference-answer",
+    "text": "输入图片并问“How many cats are there?”（有几只猫？）→ 参考答案：2 只。",
+    "source_name": "Hugging Face ViLT 官方模型卡用例",
+    "source_url": "https://huggingface.co/dandelin/vilt-b32-finetuned-vqa#how-to-use",
+    "figures": [
+      {
+        "file": "assets/cats.png",
+        "caption": "官方 VQA 用例中的两只猫"
+      }
+    ]
+  },
+  "17": {
+    "kind": "author-model-result",
+    "text": "文字描述 → 生成宇航员弹钢琴、独角兽等创意场景。下图为 Stable Diffusion 作者发布的文生图样例。",
+    "source_name": "Stable Diffusion 作者项目",
+    "source_url": "https://github.com/CompVis/stable-diffusion",
+    "figures": [
+      {
+        "file": "assets/public-examples/stable-diffusion.webp",
+        "caption": "Stable Diffusion 官方文生图样例"
+      }
+    ]
+  },
+  "18": {
+    "kind": "author-model-result",
+    "text": "输入城市照片和编辑指令 → 将同一场景修改为不同时间与光照。下图保留作者展示的原图、指令与生成结果。",
+    "source_name": "InstructPix2Pix 作者项目页",
+    "source_url": "https://instruct-pix2pix.timothybrooks.com/",
+    "figures": [
+      {
+        "file": "assets/public-examples/instruct-pix2pix.webp",
+        "caption": "同一城市场景的时间与光照编辑示例"
+      }
+    ]
+  }
+}

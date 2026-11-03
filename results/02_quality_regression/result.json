@@ -1,0 +1,10 @@
+{
+  "task": "no-reference image quality regression",
+  "model": "86Cao/IQA-ONNX-Models",
+  "revision": "2e32ab1ad40c592da9d199f4c7fb8a2383bbae94",
+  "architecture": "DBCNN",
+  "device": "CPU",
+  "input": "D:\\project\\CVList\\assets\\car.jpg",
+  "score_raw": 0.6818643808364868,
+  "note": "Raw output of a trained regressor. Not a calibrated universal percentage; do not interpret it as probability."
+}

@@ -1,0 +1,51 @@
+{
+  "model": "onnx-community/YOLOv10 (YOLOv10n)",
+  "revision": "c03e02456387191807059ef0ebe2c56315ddff55",
+  "model_url": "https://huggingface.co/onnx-community/YOLOv10/resolve/c03e02456387191807059ef0ebe2c56315ddff55/yolov10n.onnx",
+  "model_sha256": "a77dd863933f184a19e84361c64b788228a7c7dacc2c78939239a96ad3efca3b",
+  "model_bytes": 9386116,
+  "device": "CPU",
+  "task": "object detection",
+  "input": "D:\\project\\CVList\\assets\\dog.jpg",
+  "size": [
+    768,
+    576
+  ],
+  "coordinate_system": "original image, xyxy pixels",
+  "confidence_threshold": 0.4,
+  "boxes": [
+    {
+      "label": "dog",
+      "class_id": 16,
+      "score": 0.9164770245552063,
+      "box": [
+        129.7635314941406,
+        221.2723388671875,
+        311.01573486328124,
+        541.6691162109374
+      ]
+    },
+    {
+      "label": "bicycle",
+      "class_id": 1,
+      "score": 0.9114691019058228,
+      "box": [
+        126.82840576171874,
+        133.60920410156248,
+        568.745947265625,
+        421.20908203125
+      ]
+    },
+    {
+      "label": "truck",
+      "class_id": 7,
+      "score": 0.6989517211914062,
+      "box": [
+        469.58583984374997,
+        74.87779541015625,
+        691.1359130859374,
+        171.46261596679688
+      ]
+    }
+  ]
+}

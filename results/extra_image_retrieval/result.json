@@ -1,0 +1,27 @@
+{
+  "model": "Xenova/clip-vit-base-patch32",
+  "revision": "d15189d7028b43f1d3e65039190477f6af591c2a",
+  "weight_format": "trained ONNX; q8 except quality FP32",
+  "device": "CPU",
+  "task": "image-to-image retrieval",
+  "query": "D:\\project\\CVList\\assets\\query_cat.jpg",
+  "ranking": [
+    {
+      "file": "D:\\project\\CVList\\assets\\cats.png",
+      "cosine_similarity": 0.9219797505438276
+    },
+    {
+      "file": "D:\\project\\CVList\\assets\\dog.jpg",
+      "cosine_similarity": 0.5999718164297555
+    },
+    {
+      "file": "D:\\project\\CVList\\assets\\car.jpg",
+      "cosine_similarity": 0.5087370738146347
+    },
+    {
+      "file": "D:\\project\\CVList\\assets\\house.jpg",
+      "cosine_similarity": 0.2908239461025092
+    }
+  ],
+  "note": "Exact query file is excluded. The tiny gallery illustrates ranking; it is not a retrieval benchmark."
+}

@@ -1,0 +1,20 @@
+{
+  "model": "onnx-community/depth-anything-v2-small",
+  "revision": "4472b7362082ad9968fee890ca0f1e5aca36b93d",
+  "weight_format": "trained ONNX; q8 except quality FP32",
+  "device": "CPU",
+  "task": "monocular relative depth estimation",
+  "input": "D:\\project\\CVList\\assets\\car.jpg",
+  "input_size": [
+    640,
+    480
+  ],
+  "prediction_shape": [
+    480,
+    640
+  ],
+  "min": 0.2520033121109009,
+  "max": 8.967098236083984,
+  "units": "relative inverse-depth-like scores; not metres",
+  "note": "depth.npy stores raw network output. depth.png is a normalized display. This does not reconstruct hidden surfaces or an entire 3D object."
+}

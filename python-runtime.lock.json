@@ -1,0 +1,7 @@
+{
+  "package": "opencv-python-headless",
+  "version": "4.11.0.86",
+  "source": "https://files.pythonhosted.org/packages/86/8a/69176a64335aed183529207ba8bc3d329c2999d852b4f3818027203f50e6/opencv_python_headless-4.11.0.86-cp37-abi3-win_amd64.whl",
+  "bytes": 39402386,
+  "sha256": "6c304df9caa7a6a5710b91709dd4786bf20a74d57672b3c31f7033cc638174ca"
+}

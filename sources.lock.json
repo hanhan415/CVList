@@ -1,0 +1,206 @@
+{
+  "models": {
+    "segformer": {
+      "repo": "Xenova/segformer-b0-finetuned-ade-512-512",
+      "revision": "d3e5499fa8701ff0453ca940a8dfeae39b2f1504",
+      "source": "https://huggingface.co/Xenova/segformer-b0-finetuned-ade-512-512",
+      "files": {
+        "README.md": {
+          "bytes": 1659,
+          "sha256": "a746a8d3e8725d395217d4e93bc25d3890c4fefc13c1301d7983833a11fb703d"
+        },
+        "config.json": {
+          "bytes": 6957,
+          "sha256": "435799652b2b64c3e422dea20fed4c59651dae9f0e291fd885e9e067fee0ce2a"
+        },
+        "onnx/model_quantized.onnx": {
+          "bytes": 4418863,
+          "sha256": "9a98d6daf3d926869ab8cc4c2ed7374a2bc23b889bb7ca3b0915d15e3c4756bb"
+        },
+        "preprocessor_config.json": {
+          "bytes": 373,
+          "sha256": "dbabd93c735c8a5c39ef207c6c4459bf2d261a5dcc55e1ba1c1b982e5947f518"
+        },
+        "quantize_config.json": {
+          "bytes": 749,
+          "sha256": "700bcf011840dd517b8fcbd4e7aac164da208c5ef643aa4ecf87995551b1885f"
+        }
+      }
+    },
+    "depth": {
+      "repo": "onnx-community/depth-anything-v2-small",
+      "revision": "4472b7362082ad9968fee890ca0f1e5aca36b93d",
+      "source": "https://huggingface.co/onnx-community/depth-anything-v2-small",
+      "files": {
+        "README.md": {
+          "bytes": 1578,
+          "sha256": "2fdd0db4eb5d7725fe0f1522e03a63f0b3c7dc93c805669f3322f665fb3b4c86"
+        },
+        "config.json": {
+          "bytes": 38,
+          "sha256": "3aee5b9bc4f711ee885c2526d871f0c8c6c8c4b26b8e04253d0167f6a83264f5"
+        },
+        "onnx/model_quantized.onnx": {
+          "bytes": 27258801,
+          "sha256": "fcf51f1b230362b28690bb9d1809bf0431f29cad20534e3f589bd7285547f20d"
+        },
+        "preprocessor_config.json": {
+          "bytes": 461,
+          "sha256": "03576db3c13dd0471fdf5f5e1428befcb95de063fe699879150b293dc9e0a2c6"
+        },
+        "quantize_config.json": {
+          "bytes": 3154,
+          "sha256": "758bd7d9943b790bb7896dfff81e7043e46562558279eb2c3fd467279e3b22a5"
+        }
+      }
+    },
+    "quality": {
+      "repo": "86Cao/IQA-ONNX-Models",
+      "revision": "2e32ab1ad40c592da9d199f4c7fb8a2383bbae94",
+      "source": "https://huggingface.co/86Cao/IQA-ONNX-Models",
+      "files": {
+        "dbcnn_model.onnx": {
+          "bytes": 102172,
+          "sha256": "2a679a6264bfc188e623e9a937ad214dd761f7deb9469442a37107560557bc3f"
+        },
+        "dbcnn_model.onnx.data": {
+          "bytes": 61276160,
+          "sha256": "ed3e6df9109aa30323bcd2006a098023aa57fbcb98bfe1d2767227fc71c5382f"
+        }
+      }
+    },
+    "clip": {
+      "repo": "Xenova/clip-vit-base-patch32",
+      "revision": "d15189d7028b43f1d3e65039190477f6af591c2a",
+      "source": "https://huggingface.co/Xenova/clip-vit-base-patch32",
+      "files": {
+        "README.md": {
+          "bytes": 1404,
+          "sha256": "19c2ef35fa89966c7fa7aa30666b4e3aeef4b075461626be55e6037133cc6aa4"
+        },
+        "config.json": {
+          "bytes": 4524,
+          "sha256": "493ef57ff783e42d1530c91b53469b7fdf8db8a9c1408e86998fcb7899a4f495"
+        },
+        "merges.txt": {
+          "bytes": 524619,
+          "sha256": "9fd691f7c8039210e0fced15865466c65820d09b63988b0174bfe25de299051a"
+        },
+        "onnx/model_quantized.onnx": {
+          "bytes": 153695702,
+          "sha256": "0898a3facfdb27f0a041e57649b4989cfd094e4a0040d6ae75ed69917dfc7328"
+        },
+        "preprocessor_config.json": {
+          "bytes": 520,
+          "sha256": "6f638fb9401a6d6296feff533ee7efe657b787c49f954f82f5906b36ef2a1b1f"
+        },
+        "special_tokens_map.json": {
+          "bytes": 472,
+          "sha256": "c4864a9376a8401918425bed71fc14fc0e81f9b59ec45c1cf96cccb2df508eac"
+        },
+        "tokenizer.json": {
+          "bytes": 2224119,
+          "sha256": "f7f3b7af117d467b58374797691a6438d3e6b9e9cef800dfd5dced7f697a90cd"
+        },
+        "tokenizer_config.json": {
+          "bytes": 775,
+          "sha256": "60ba2912bc6344c94bc16bbdec27fa1209409167b6f2fdf3cfe9e65462ea3967"
+        },
+        "vocab.json": {
+          "bytes": 862328,
+          "sha256": "5047b556ce86ccaf6aa22b3ffccfc52d391ea4accdab9c2f2407da5b742d4363"
+        }
+      }
+    },
+    "florence": {
+      "repo": "onnx-community/Florence-2-base-ft",
+      "revision": "e88a44eaf3791a35eae0c5a47b3dbcd36e67eb6f",
+      "source": "https://huggingface.co/onnx-community/Florence-2-base-ft",
+      "files": {
+        "README.md": {
+          "bytes": 2665,
+          "sha256": "dbf8928d1bf7201ceab13775837bc1364cec189da370f8561b56303cf4c22932"
+        },
+        "added_tokens.json": {
+          "bytes": 22410,
+          "sha256": "ba67457c577895525996e7a42d7da60a05856506ea4fd25ff9a023a64662f74b"
+        },
+        "config.json": {
+          "bytes": 5432,
+          "sha256": "d90c22ed72eb55291f183fcd9b98ebd3bd3d92bfcffb6c7f6e1606085e793525"
+        },
+        "generation_config.json": {
+          "bytes": 292,
+          "sha256": "7b8eb17bbd6cf8a07f619ad83ae03881eff05b6b9237bab89005b40e77783c29"
+        },
+        "merges.txt": {
+          "bytes": 456318,
+          "sha256": "1ce1664773c50f3e0cc8842619a93edc4624525b728b188a9e0be33b7726adc5"
+        },
+        "onnx/decoder_model_merged_quantized.onnx": {
+          "bytes": 98177697,
+          "sha256": "f22f52f980c33df0efa15932c2f3db6d9d3595ce6387eca938b8cfe23dc4c641"
+        },
+        "onnx/embed_tokens_quantized.onnx": {
+          "bytes": 39390433,
+          "sha256": "6b2258db1c8ee9b160576ccde3cd3814d83a2edaed0dd1c6ca9ff3c38fa62214"
+        },
+        "onnx/encoder_model_quantized.onnx": {
+          "bytes": 43651493,
+          "sha256": "f4ad7a68f1fb875d3bcf735ea14a7021b7ba7e83baf7cf10289881b4ed6d9b85"
+        },
+        "onnx/vision_encoder_quantized.onnx": {
+          "bytes": 93746540,
+          "sha256": "3b79d54f23f666f731549db23cb070c35a979ce19cbd9720e90e67a78dc9768c"
+        },
+        "preprocessor_config.json": {
+          "bytes": 2673,
+          "sha256": "c892857e34a7082284983a7717717d39c9bf7e574f1f41d80d4c918c97502efa"
+        },
+        "special_tokens_map.json": {
+          "bytes": 146627,
+          "sha256": "72ff172dc769bc1551b1b4211628ce3271643bc60379e4da45d85a9be9332c39"
+        },
+        "tokenizer.json": {
+          "bytes": 2297961,
+          "sha256": "d69dcdb2323e124ac4f800cb9863ddccea0d7bb11e16125e8df3bd60f2f8aeac"
+        },
+        "tokenizer_config.json": {
+          "bytes": 197658,
+          "sha256": "d8e64607233cb53b619fb46664f6cad08176c26e0e8735b2d30d888364f19600"
+        },
+        "vocab.json": {
+          "bytes": 1099884,
+          "sha256": "394fdc63c71aabe0a9b97117f5d62fb5fcc4d59b2b3ea929a3929e6a53217b3c"
+        }
+      }
+    }
+  },
+  "assets": {
+    "car.jpg": {
+      "url": "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/transformers/tasks/car.jpg",
+      "bytes": 39080,
+      "sha256": "8cd28b372908bcaa704a438965f8de47238c9514d5efefa89c510b82032f9d18"
+    },
+    "cats.png": {
+      "url": "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/coco_sample.png",
+      "bytes": 694498,
+      "sha256": "cf6f3c4befa148732c7453e0de5afab00f682427435fead2d88b07a9615cdac2"
+    },
+    "dog.jpg": {
+      "url": "https://raw.githubusercontent.com/pjreddie/darknet/master/data/dog.jpg",
+      "bytes": 163759,
+      "sha256": "5a9522051c3cec2bbd2f6323fccba32e8fbf3ddcc2b3e2fd46b04c720bc6f866"
+    },
+    "house.jpg": {
+      "url": "https://huggingface.co/datasets/Xenova/transformers.js-docs/resolve/main/house.jpg",
+      "bytes": 52650,
+      "sha256": "99f7af15a7bd66f3d2ad8b98f1b41941c27407a35d303f9b70724cb231a36098"
+    },
+    "people.avi": {
+      "url": "https://raw.githubusercontent.com/opencv/opencv/4.x/samples/data/vtest.avi",
+      "bytes": 8131690,
+      "sha256": "45cddc9490be69345cbdab64ca583be65987e864ca408038e648db99e10516cf"
+    }
+  }
+}

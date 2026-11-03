@@ -1,0 +1,26 @@
+{
+  "model": "Xenova/clip-vit-base-patch32",
+  "revision": "d15189d7028b43f1d3e65039190477f6af591c2a",
+  "weight_format": "trained ONNX; q8 except quality FP32",
+  "device": "CPU",
+  "task": "text-to-image retrieval",
+  "query": "two cats on a sofa",
+  "ranking": [
+    {
+      "file": "D:\\project\\CVList\\assets\\cats.png",
+      "cosine_similarity": 0.2820744486554582
+    },
+    {
+      "file": "D:\\project\\CVList\\assets\\car.jpg",
+      "cosine_similarity": 0.17887802819037635
+    },
+    {
+      "file": "D:\\project\\CVList\\assets\\dog.jpg",
+      "cosine_similarity": 0.17728026418326495
+    },
+    {
+      "file": "D:\\project\\CVList\\assets\\house.jpg",
+      "cosine_similarity": 0.14457186546006665
+    }
+  ]
+}

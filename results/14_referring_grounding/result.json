@@ -1,0 +1,28 @@
+{
+  "model": "onnx-community/Florence-2-base-ft",
+  "revision": "e88a44eaf3791a35eae0c5a47b3dbcd36e67eb6f",
+  "weight_format": "trained ONNX; q8 except quality FP32",
+  "device": "CPU",
+  "task": "phrase grounding",
+  "input": "D:\\project\\CVList\\assets\\car.jpg",
+  "text": "the green car",
+  "size": [
+    640,
+    480
+  ],
+  "coordinate_system": "resized inference image, xyxy pixels",
+  "boxes": [
+    {
+      "label": "the green car",
+      "box": [
+        36.800000000000004,
+        158.16,
+        581.4399999999999,
+        372.71999999999997
+      ]
+    }
+  ],
+  "raw": "</s><s>the green car<loc_57><loc_329><loc_908><loc_776></s>",
+  "truncated": false,
+  "note": "English phrase grounding baseline; relational referring expressions may fail. No box is inserted when the model finds none."
+}

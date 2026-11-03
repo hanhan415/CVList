@@ -1,0 +1,405 @@
+{
+  "model": "onnx-community/Florence-2-base-ft",
+  "revision": "e88a44eaf3791a35eae0c5a47b3dbcd36e67eb6f",
+  "weight_format": "trained ONNX; q8 except quality FP32",
+  "device": "CPU",
+  "task": "multi-object tracking",
+  "frames_folder": "D:\\project\\CVList\\assets\\frames",
+  "association": "class-consistent greedy IoU; no motion model or re-identification",
+  "iou_threshold": 0.2,
+  "frames": [
+    {
+      "file": "frame_0000.jpg",
+      "size": [
+        640,
+        480
+      ],
+      "detections": 5,
+      "tracks": [
+        {
+          "label": "land vehicle",
+          "box": [
+            541.12,
+            35.76,
+            607.04,
+            83.75999999999999
+          ],
+          "track_id": 1
+        },
+        {
+          "label": "land vehicle",
+          "box": [
+            610.88,
+            41.040000000000006,
+            639.0400000000001,
+            78.48
+          ],
+          "track_id": 2
+        },
+        {
+          "label": "person",
+          "box": [
+            531.52,
+            199.44,
+            573.12,
+            269.04
+          ],
+          "track_id": 3
+        },
+        {
+          "label": "person",
+          "box": [
+            209.60000000000002,
+            182.16,
+            239.68,
+            256.56
+          ],
+          "track_id": 4
+        },
+        {
+          "label": "person",
+          "box": [
+            415.67999999999995,
+            130.32000000000002,
+            444.48,
+            193.20000000000002
+          ],
+          "track_id": 5
+        }
+      ],
+      "raw": "</s><s>land vehicle<loc_845><loc_74><loc_948><loc_174><loc_954><loc_85><loc_998><loc_163>person<loc_830><loc_415><loc_895><loc_560><loc_327><loc_379><loc_374><loc_534><loc_649><loc_271><loc_694><loc_402></s>",
+      "truncated": false
+    },
+    {
+      "file": "frame_0005.jpg",
+      "size": [
+        640,
+        480
+      ],
+      "detections": 5,
+      "tracks": [
+        {
+          "label": "person",
+          "box": [
+            404.79999999999995,
+            135.6,
+            431.03999999999996,
+            199.44
+          ],
+          "track_id": 5
+        },
+        {
+          "label": "car",
+          "box": [
+            610.88,
+            41.519999999999996,
+            639.0400000000001,
+            78.48
+          ],
+          "track_id": 6
+        },
+        {
+          "label": "person",
+          "box": [
+            491.2,
+            201.35999999999999,
+            539.2,
+            272.4
+          ],
+          "track_id": 7
+        },
+        {
+          "label": "person",
+          "box": [
+            234.56,
+            176.88,
+            269.76,
+            251.76
+          ],
+          "track_id": 8
+        },
+        {
+          "label": "street light",
+          "box": [
+            329.91999999999996,
+            15.120000000000001,
+            368.32,
+            327.6
+          ],
+          "track_id": 9
+        }
+      ],
+      "raw": "</s><s>car<loc_954><loc_86><loc_998><loc_163>person<loc_767><loc_419><loc_842><loc_567><loc_366><loc_368><loc_421><loc_524><loc_632><loc_282><loc_673><loc_415>street light<loc_515><loc_31><loc_575><loc_682></s>",
+      "truncated": false
+    },
+    {
+      "file": "frame_0010.jpg",
+      "size": [
+        640,
+        480
+      ],
+      "detections": 5,
+      "tracks": [
+        {
+          "label": "land vehicle",
+          "box": [
+            541.12,
+            35.76,
+            607.04,
+            83.28
+          ],
+          "track_id": 1
+        },
+        {
+          "label": "person",
+          "box": [
+            385.6,
+            138.95999999999998,
+            421.44,
+            205.2
+          ],
+          "track_id": 5
+        },
+        {
+          "label": "person",
+          "box": [
+            262.71999999999997,
+            172.07999999999998,
+            299.84000000000003,
+            245.51999999999998
+          ],
+          "track_id": 10
+        },
+        {
+          "label": "person",
+          "box": [
+            456,
+            197.51999999999998,
+            489.91999999999996,
+            271.92
+          ],
+          "track_id": 11
+        },
+        {
+          "label": "person",
+          "box": [
+            621.12,
+            252.23999999999998,
+            639.0400000000001,
+            340.56
+          ],
+          "track_id": 12
+        }
+      ],
+      "raw": "</s><s>land vehicle<loc_845><loc_74><loc_948><loc_173>person<loc_410><loc_358><loc_468><loc_511><loc_712><loc_411><loc_765><loc_566><loc_602><loc_289><loc_658><loc_427><loc_970><loc_525><loc_998><loc_709></s>",
+      "truncated": false
+    },
+    {
+      "file": "frame_0015.jpg",
+      "size": [
+        640,
+        480
+      ],
+      "detections": 5,
+      "tracks": [
+        {
+          "label": "person",
+          "box": [
+            599.36,
+            239.28,
+            637.12,
+            334.8
+          ],
+          "track_id": 12
+        },
+        {
+          "label": "person",
+          "box": [
+            281.92,
+            166.79999999999998,
+            314.56,
+            239.76
+          ],
+          "track_id": 10
+        },
+        {
+          "label": "person",
+          "box": [
+            366.4,
+            143.76,
+            400.31999999999994,
+            208.56
+          ],
+          "track_id": 5
+        },
+        {
+          "label": "person",
+          "box": [
+            415.03999999999996,
+            195.6,
+            439.36,
+            269.52
+          ],
+          "track_id": 13
+        },
+        {
+          "label": "van",
+          "box": [
+            542.4,
+            36.72,
+            605.76,
+            84.24
+          ],
+          "track_id": 14
+        }
+      ],
+      "raw": "</s><s>person<loc_936><loc_498><loc_995><loc_697><loc_440><loc_347><loc_491><loc_499><loc_572><loc_299><loc_625><loc_434><loc_648><loc_407><loc_686><loc_561>van<loc_847><loc_76><loc_946><loc_175></s>",
+      "truncated": false
+    },
+    {
+      "file": "frame_0020.jpg",
+      "size": [
+        640,
+        480
+      ],
+      "detections": 5,
+      "tracks": [
+        {
+          "label": "person",
+          "box": [
+            605.76,
+            225.35999999999999,
+            631.36,
+            308.4
+          ],
+          "track_id": 12
+        },
+        {
+          "label": "person",
+          "box": [
+            301.12,
+            160.56,
+            335.67999999999995,
+            231.12
+          ],
+          "track_id": 10
+        },
+        {
+          "label": "person",
+          "box": [
+            570.56,
+            226.32,
+            603.84,
+            314.64
+          ],
+          "track_id": 15
+        },
+        {
+          "label": "person",
+          "box": [
+            364.48,
+            193.68,
+            402.23999999999995,
+            266.64
+          ],
+          "track_id": 16
+        },
+        {
+          "label": "truck",
+          "box": [
+            541.12,
+            36.72,
+            605.76,
+            84.24
+          ],
+          "track_id": 17
+        }
+      ],
+      "raw": "</s><s>person<loc_891><loc_471><loc_943><loc_655><loc_569><loc_403><loc_628><loc_555><loc_470><loc_334><loc_524><loc_481><loc_946><loc_469><loc_986><loc_642>truck<loc_845><loc_76><loc_946><loc_175></s>",
+      "truncated": false
+    },
+    {
+      "file": "frame_0025.jpg",
+      "size": [
+        640,
+        480
+      ],
+      "detections": 7,
+      "tracks": [
+        {
+          "label": "van",
+          "box": [
+            542.4,
+            36.24,
+            605.76,
+            83.75999999999999
+          ],
+          "track_id": 14
+        },
+        {
+          "label": "person",
+          "box": [
+            310.08,
+            156.72,
+            336.32,
+            226.32
+          ],
+          "track_id": 10
+        },
+        {
+          "label": "person",
+          "box": [
+            576.96,
+            214.8,
+            609.6,
+            297.84000000000003
+          ],
+          "track_id": 15
+        },
+        {
+          "label": "person",
+          "box": [
+            550.08,
+            216.72,
+            578.88,
+            304.56
+          ],
+          "track_id": 18
+        },
+        {
+          "label": "person",
+          "box": [
+            342.71999999999997,
+            201.35999999999999,
+            370.24,
+            255.6
+          ],
+          "track_id": 19
+        },
+        {
+          "label": "person",
+          "box": [
+            324.15999999999997,
+            146.16,
+            347.2,
+            210.96
+          ],
+          "track_id": 20
+        },
+        {
+          "label": "van",
+          "box": [
+            610.88,
+            41.040000000000006,
+            639.0400000000001,
+            78.48
+          ],
+          "track_id": 21
+        }
+      ],
+      "raw": "</s><s>person<loc_901><loc_447><loc_952><loc_620><loc_859><loc_451><loc_904><loc_634><loc_484><loc_326><loc_525><loc_471><loc_535><loc_419><loc_578><loc_532><loc_506><loc_304><loc_542><loc_439>van<loc_847><loc_75><loc_946><loc_174><loc_954><loc_85><loc_998><loc_163></s>",
+      "truncated": false
+    }
+  ],
+  "note": "IDs follow genuine per-frame detections. Occlusion, camera movement and missed detections can cause ID switches."
+}

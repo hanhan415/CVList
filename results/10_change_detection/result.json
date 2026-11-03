@@ -1,0 +1,298 @@
+{
+  "model": "Xenova/segformer-b0-finetuned-ade-512-512",
+  "revision": "d3e5499fa8701ff0453ca940a8dfeae39b2f1504",
+  "weight_format": "trained ONNX; q8 except quality FP32",
+  "device": "CPU",
+  "task": "semantic change detection baseline",
+  "before": "D:\\project\\CVList\\assets\\frames\\frame_0000.jpg",
+  "after": "D:\\project\\CVList\\assets\\frames\\frame_0025.jpg",
+  "size": [
+    640,
+    480
+  ],
+  "changed_pixels": 37689,
+  "changed_fraction": 0.122685546875,
+  "changes": [
+    {
+      "from": "path",
+      "to": "road",
+      "pixels": 14189
+    },
+    {
+      "from": "road",
+      "to": "person",
+      "pixels": 4871
+    },
+    {
+      "from": "road",
+      "to": "sidewalk",
+      "pixels": 3225
+    },
+    {
+      "from": "sidewalk",
+      "to": "road",
+      "pixels": 2924
+    },
+    {
+      "from": "person",
+      "to": "road",
+      "pixels": 2548
+    },
+    {
+      "from": "grass",
+      "to": "road",
+      "pixels": 1583
+    },
+    {
+      "from": "grass",
+      "to": "sidewalk",
+      "pixels": 1289
+    },
+    {
+      "from": "sidewalk",
+      "to": "person",
+      "pixels": 1003
+    },
+    {
+      "from": "sidewalk",
+      "to": "path",
+      "pixels": 853
+    },
+    {
+      "from": "earth",
+      "to": "rock",
+      "pixels": 645
+    },
+    {
+      "from": "path",
+      "to": "person",
+      "pixels": 608
+    },
+    {
+      "from": "grass",
+      "to": "rock",
+      "pixels": 478
+    },
+    {
+      "from": "grass",
+      "to": "building",
+      "pixels": 358
+    },
+    {
+      "from": "person",
+      "to": "path",
+      "pixels": 333
+    },
+    {
+      "from": "sidewalk",
+      "to": "rock",
+      "pixels": 304
+    },
+    {
+      "from": "grass",
+      "to": "person",
+      "pixels": 303
+    },
+    {
+      "from": "person",
+      "to": "grass",
+      "pixels": 301
+    },
+    {
+      "from": "signboard",
+      "to": "car",
+      "pixels": 264
+    },
+    {
+      "from": "signboard",
+      "to": "person",
+      "pixels": 201
+    },
+    {
+      "from": "grass",
+      "to": "path",
+      "pixels": 184
+    },
+    {
+      "from": "bicycle",
+      "to": "road",
+      "pixels": 179
+    },
+    {
+      "from": "fence",
+      "to": "person",
+      "pixels": 111
+    },
+    {
+      "from": "grass",
+      "to": "car",
+      "pixels": 110
+    },
+    {
+      "from": "road",
+      "to": "car",
+      "pixels": 73
+    },
+    {
+      "from": "earth",
+      "to": "person",
+      "pixels": 66
+    },
+    {
+      "from": "grass",
+      "to": "bicycle",
+      "pixels": 66
+    },
+    {
+      "from": "grass",
+      "to": "ball",
+      "pixels": 66
+    },
+    {
+      "from": "path",
+      "to": "grass",
+      "pixels": 62
+    },
+    {
+      "from": "earth",
+      "to": "sidewalk",
+      "pixels": 55
+    },
+    {
+      "from": "person",
+      "to": "sidewalk",
+      "pixels": 48
+    },
+    {
+      "from": "path",
+      "to": "sidewalk",
+      "pixels": 46
+    },
+    {
+      "from": "building",
+      "to": "signboard",
+      "pixels": 45
+    },
+    {
+      "from": "car",
+      "to": "road",
+      "pixels": 42
+    },
+    {
+      "from": "sidewalk",
+      "to": "building",
+      "pixels": 34
+    },
+    {
+      "from": "signboard",
+      "to": "building",
+      "pixels": 30
+    },
+    {
+      "from": "grass",
+      "to": "fence",
+      "pixels": 30
+    },
+    {
+      "from": "car",
+      "to": "building",
+      "pixels": 29
+    },
+    {
+      "from": "building",
+      "to": "car",
+      "pixels": 18
+    },
+    {
+      "from": "grass",
+      "to": "earth",
+      "pixels": 15
+    },
+    {
+      "from": "grass",
+      "to": "streetlight",
+      "pixels": 14
+    },
+    {
+      "from": "road",
+      "to": "signboard",
+      "pixels": 12
+    },
+    {
+      "from": "building",
+      "to": "grass",
+      "pixels": 10
+    },
+    {
+      "from": "pole",
+      "to": "road",
+      "pixels": 10
+    },
+    {
+      "from": "pole",
+      "to": "signboard",
+      "pixels": 10
+    },
+    {
+      "from": "road",
+      "to": "path",
+      "pixels": 9
+    },
+    {
+      "from": "building",
+      "to": "streetlight",
+      "pixels": 6
+    },
+    {
+      "from": "earth",
+      "to": "grass",
+      "pixels": 5
+    },
+    {
+      "from": "fence",
+      "to": "road",
+      "pixels": 4
+    },
+    {
+      "from": "person",
+      "to": "pole",
+      "pixels": 4
+    },
+    {
+      "from": "road",
+      "to": "grass",
+      "pixels": 3
+    },
+    {
+      "from": "earth",
+      "to": "road",
+      "pixels": 3
+    },
+    {
+      "from": "pole",
+      "to": "person",
+      "pixels": 3
+    },
+    {
+      "from": "grass",
+      "to": "pole",
+      "pixels": 3
+    },
+    {
+      "from": "building",
+      "to": "sidewalk",
+      "pixels": 2
+    },
+    {
+      "from": "sidewalk",
+      "to": "grass",
+      "pixels": 1
+    },
+    {
+      "from": "pole",
+      "to": "car",
+      "pixels": 1
+    }
+  ],
+  "note": "Two real video frames. Changed labels can include segmentation jitter and shadows; same-class object changes may be missed. No claim of a trained change-specific detector."
+}

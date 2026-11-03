@@ -1,0 +1,280 @@
+{
+  "01": {
+    "core": "用 CNN 或 ViT 提取图像特征，再通过分类头或图文相似度确定类别。",
+    "models": [
+      {
+        "name": "ResNet",
+        "url": "https://huggingface.co/docs/transformers/model_doc/resnet"
+      },
+      {
+        "name": "ViT",
+        "url": "https://github.com/google-research/vision_transformer"
+      },
+      {
+        "name": "CLIP",
+        "url": "https://github.com/openai/CLIP"
+      }
+    ],
+    "current": "CLIP ViT-B/32：把图片与候选类别文字进行匹配。",
+    "application": "相册自动分类、商品类别识别、工业产品分拣。"
+  },
+  "02": {
+    "core": "视觉特征提取后用回归头输出连续数值，常用 MSE、MAE 等损失约束数值误差。",
+    "models": [
+      {
+        "name": "DBCNN（质量评分）",
+        "url": "https://github.com/zwx8981/DBCNN"
+      },
+      {
+        "name": "HyperIQA（质量评分）",
+        "url": "https://github.com/SSL92/hyperIQA"
+      }
+    ],
+    "current": "DBCNN：双分支特征与双线性池化用于图像质量回归；本页保留未标定的原始分数。",
+    "application": "图像质量评分、年龄估计、客流数量估计。"
+  },
+  "03": {
+    "core": "同时预测目标类别与边界框；常见路线包括密集预测、目标查询和坐标序列生成。",
+    "models": [
+      {
+        "name": "YOLO 系列",
+        "url": "https://docs.ultralytics.com/tasks/detect/"
+      },
+      {
+        "name": "YOLOv10",
+        "url": "https://github.com/THU-MIG/yolov10"
+      },
+      {
+        "name": "DETR",
+        "url": "https://github.com/facebookresearch/detr"
+      }
+    ],
+    "current": "YOLO 系列（本例采用 YOLOv10n）：一次前向推理预测目标类别、置信度和边界框。",
+    "application": "交通车辆与行人检测、工业缺陷定位、视频安防。"
+  },
+  "04": {
+    "core": "编码器提取多尺度语义特征，分割解码器恢复每个像素的类别或实例区域。",
+    "models": [
+      {
+        "name": "SegFormer",
+        "url": "https://huggingface.co/docs/transformers/model_doc/segformer"
+      },
+      {
+        "name": "Mask2Former",
+        "url": "https://github.com/facebookresearch/Mask2Former"
+      }
+    ],
+    "current": "SegFormer-B0：进行 ADE20K 语义分割；本例不区分同类别的独立实例。",
+    "application": "自动驾驶道路理解、医学影像勾画、图像精细抠图。"
+  },
+  "05": {
+    "core": "提取局部特征并建立对应关系，可再用几何一致性校验剔除错误匹配。",
+    "models": [
+      {
+        "name": "SuperPoint ＋ LightGlue",
+        "url": "https://github.com/cvg/LightGlue"
+      },
+      {
+        "name": "LoFTR",
+        "url": "https://github.com/zju3dv/LoFTR"
+      }
+    ],
+    "current": "LightGlue 作者公布的建筑图像对应点匹配结果。",
+    "application": "全景图拼接、图像配准、相机定位与视觉导航。"
+  },
+  "06": {
+    "core": "通过视觉编码器学习场景几何，再由深度解码器预测每个像素的远近。",
+    "models": [
+      {
+        "name": "Depth Anything V2",
+        "url": "https://github.com/DepthAnything/Depth-Anything-V2"
+      },
+      {
+        "name": "DPT",
+        "url": "https://huggingface.co/docs/transformers/model_doc/dpt"
+      }
+    ],
+    "current": "Depth Anything V2 Small：输出相对深度，不能直接解释为米制距离。",
+    "application": "机器人避障、AR 虚实遮挡、单目场景几何感知。"
+  },
+  "07": {
+    "core": "结合多视图几何、相机位姿和可微渲染，恢复或学习能够从不同视角观察的三维场景。",
+    "models": [
+      {
+        "name": "NeRF",
+        "url": "https://github.com/bmild/nerf"
+      },
+      {
+        "name": "3D Gaussian Splatting",
+        "url": "https://github.com/graphdeco-inria/gaussian-splatting"
+      }
+    ],
+    "current": "NeRF 作者公开的 Lego 场景渲染示例，采用三维辐射场表示。",
+    "application": "文物数字化、商品三维展示、室内场景重建与虚拟漫游。"
+  },
+  "08": {
+    "core": "把光谱或多传感器信息与空间纹理结合，通过特征对齐、融合完成分类或分割。",
+    "models": [
+      {
+        "name": "MCubeSNet（材料分割）",
+        "url": "https://github.com/kyotovision-public/multimodal-material-segmentation"
+      },
+      {
+        "name": "SpectralFormer（高光谱分类）",
+        "url": "https://github.com/danfenghong/IEEE_TGRS_SpectralFormer"
+      }
+    ],
+    "current": "MCubeS 官方 RGB、近红外、偏振输入与人工材料标注。",
+    "application": "材料识别、城市地物分类、低照度下的多传感器感知。"
+  },
+  "09": {
+    "core": "逐帧检测后，利用框重叠、运动预测或外观特征，把不同帧中的同一目标关联为同一个 ID。",
+    "models": [
+      {
+        "name": "ByteTrack",
+        "url": "https://github.com/FoundationVision/ByteTrack"
+      },
+      {
+        "name": "DeepSORT",
+        "url": "https://github.com/nwojke/deep_sort"
+      }
+    ],
+    "current": "Florence-2 检测 ＋ 贪心 IoU 关联的基础实现，没有运动预测和外观重识别。",
+    "application": "交通流量统计、行人轨迹分析、体育运动分析。"
+  },
+  "10": {
+    "core": "对齐两个时刻的图像特征，建模它们的差异，再解码为发生变化的区域。",
+    "models": [
+      {
+        "name": "ChangeFormer",
+        "url": "https://github.com/wgcban/ChangeFormer"
+      },
+      {
+        "name": "BIT",
+        "url": "https://github.com/justchenhao/BIT_CD"
+      }
+    ],
+    "current": "分别执行两次 SegFormer，再比较像素类别；这是语义差分基线，没有使用专用变化检测网络。",
+    "application": "城市建设监测、灾前灾后对比、设施巡检。"
+  },
+  "11": {
+    "core": "编码视频时序与文本，通过跨模态交互对齐，预测相关片段的起点和终点。",
+    "models": [
+      {
+        "name": "Moment-DETR",
+        "url": "https://github.com/jayleicn/moment_detr"
+      },
+      {
+        "name": "QD-DETR",
+        "url": "https://github.com/wjun0830/QD-DETR"
+      }
+    ],
+    "current": "Moment-DETR 作者公开的第 3 个预测候选及对应视频帧。",
+    "application": "按描述检索视频片段、长视频快速剪辑、监控事件回溯。"
+  },
+  "12": {
+    "core": "视觉编码器提取画面信息，语言解码器以这些视觉特征为条件逐词生成描述。",
+    "models": [
+      {
+        "name": "BLIP",
+        "url": "https://github.com/salesforce/BLIP"
+      },
+      {
+        "name": "Florence-2",
+        "url": "https://huggingface.co/microsoft/Florence-2-base-ft"
+      }
+    ],
+    "current": "Florence-2-base-ft：生成英文场景描述，页面保留原始输出。",
+    "application": "无障碍看图、图片自动配文、媒体素材内容索引。"
+  },
+  "13": {
+    "core": "融合图像与问题，再从候选答案中分类选择，或使用语言解码器生成答案。",
+    "models": [
+      {
+        "name": "ViLT",
+        "url": "https://huggingface.co/dandelin/vilt-b32-finetuned-vqa"
+      },
+      {
+        "name": "BLIP-VQA",
+        "url": "https://huggingface.co/Salesforce/blip-vqa-base"
+      }
+    ],
+    "current": "ViLT 官方图片问答用例，参考答案为“2 只”。",
+    "application": "看图问答助手、无障碍辅助、交互式图像查询。"
+  },
+  "14": {
+    "core": "把描述中的实体、属性或关系与图像区域对齐，再预测文字所指定对象的边界框。",
+    "models": [
+      {
+        "name": "Grounding DINO",
+        "url": "https://github.com/IDEA-Research/GroundingDINO"
+      },
+      {
+        "name": "Florence-2",
+        "url": "https://huggingface.co/microsoft/Florence-2-base-ft"
+      }
+    ],
+    "current": "Florence-2 短语定位：接收英文描述并生成目标框，复杂关系描述可能失败。",
+    "application": "按文字查找图中物体、机器人目标指引、图像标注辅助。"
+  },
+  "15": {
+    "core": "把图片与文字编码到对齐的语义空间，利用向量相似度进行跨模态检索和排序。",
+    "models": [
+      {
+        "name": "CLIP",
+        "url": "https://github.com/openai/CLIP"
+      },
+      {
+        "name": "SigLIP",
+        "url": "https://huggingface.co/docs/transformers/model_doc/siglip"
+      }
+    ],
+    "current": "CLIP ViT-B/32：计算图文嵌入的余弦相似度，分值不是概率。",
+    "application": "自然语言搜图、商品图文搜索、媒体素材库检索。"
+  },
+  "16": {
+    "core": "用语言限定要分割的目标，融合图文特征后预测像素掩码或对象轮廓。",
+    "models": [
+      {
+        "name": "CLIPSeg",
+        "url": "https://github.com/timojl/clipseg"
+      },
+      {
+        "name": "Florence-2",
+        "url": "https://huggingface.co/microsoft/Florence-2-base-ft"
+      }
+    ],
+    "current": "Florence-2：生成目标多边形，再栅格化为像素掩码。",
+    "application": "文字指令抠图、指定物体的局部编辑、交互式标注。"
+  },
+  "17": {
+    "core": "通过扩散去噪或流匹配，在文字条件约束下逐步生成符合描述的图像。",
+    "models": [
+      {
+        "name": "Stable Diffusion",
+        "url": "https://github.com/CompVis/stable-diffusion"
+      },
+      {
+        "name": "FLUX.1",
+        "url": "https://huggingface.co/black-forest-labs/FLUX.1-dev"
+      }
+    ],
+    "current": "Stable Diffusion 作者公开的文生图样例。",
+    "application": "广告创意、概念设计、插画与视觉素材制作。"
+  },
+  "18": {
+    "core": "将原图与编辑条件共同输入生成模型，通过条件去噪或重建改变内容并保留部分结构。",
+    "models": [
+      {
+        "name": "InstructPix2Pix",
+        "url": "https://github.com/timothybrooks/instruct-pix2pix"
+      },
+      {
+        "name": "SDEdit",
+        "url": "https://github.com/ermongroup/SDEdit"
+      }
+    ],
+    "current": "InstructPix2Pix 作者公开的文字指令编辑结果。",
+    "application": "商品背景替换、照片风格转换、按指令修改局部内容。"
+  }
+}

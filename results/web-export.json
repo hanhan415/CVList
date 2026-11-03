@@ -1,0 +1,292 @@
+{
+  "generated_at": "2026-11-03T03:06:59.463Z",
+  "mode": "portable-six-layer-research-guide",
+  "research_pages": 7,
+  "tasks": 18,
+  "groups": 6,
+  "agricultural_combinations": 8,
+  "agricultural_sublinks": 8,
+  "agricultural_illustrations": 15,
+  "technical_notes": 18,
+  "real_examples": 11,
+  "public_examples": 7,
+  "text_only_examples": 0,
+  "embedded_images": 35,
+  "html_bytes": 2832675,
+  "models": [
+    {
+      "id": "01",
+      "model": "Xenova/clip-vit-base-patch32",
+      "revision": "d15189d7028b43f1d3e65039190477f6af591c2a"
+    },
+    {
+      "id": "02",
+      "model": "86Cao/IQA-ONNX-Models",
+      "revision": "2e32ab1ad40c592da9d199f4c7fb8a2383bbae94"
+    },
+    {
+      "id": "03",
+      "model": "onnx-community/YOLOv10 (YOLOv10n)",
+      "revision": "c03e02456387191807059ef0ebe2c56315ddff55"
+    },
+    {
+      "id": "04",
+      "model": "Xenova/segformer-b0-finetuned-ade-512-512",
+      "revision": "d3e5499fa8701ff0453ca940a8dfeae39b2f1504"
+    },
+    {
+      "id": "06",
+      "model": "onnx-community/depth-anything-v2-small",
+      "revision": "4472b7362082ad9968fee890ca0f1e5aca36b93d"
+    },
+    {
+      "id": "09",
+      "model": "onnx-community/Florence-2-base-ft",
+      "revision": "e88a44eaf3791a35eae0c5a47b3dbcd36e67eb6f"
+    },
+    {
+      "id": "10",
+      "model": "Xenova/segformer-b0-finetuned-ade-512-512",
+      "revision": "d3e5499fa8701ff0453ca940a8dfeae39b2f1504"
+    },
+    {
+      "id": "12",
+      "model": "onnx-community/Florence-2-base-ft",
+      "revision": "e88a44eaf3791a35eae0c5a47b3dbcd36e67eb6f"
+    },
+    {
+      "id": "14",
+      "model": "onnx-community/Florence-2-base-ft",
+      "revision": "e88a44eaf3791a35eae0c5a47b3dbcd36e67eb6f"
+    },
+    {
+      "id": "15",
+      "model": "Xenova/clip-vit-base-patch32",
+      "revision": "d15189d7028b43f1d3e65039190477f6af591c2a"
+    },
+    {
+      "id": "16",
+      "model": "onnx-community/Florence-2-base-ft",
+      "revision": "e88a44eaf3791a35eae0c5a47b3dbcd36e67eb6f"
+    }
+  ],
+  "public_sources": [
+    {
+      "id": "05",
+      "kind": "author-model-result",
+      "source_url": "https://github.com/cvg/LightGlue"
+    },
+    {
+      "id": "07",
+      "kind": "author-model-result",
+      "source_url": "https://github.com/bmild/nerf"
+    },
+    {
+      "id": "08",
+      "kind": "official-dataset-example",
+      "source_url": "https://github.com/kyotovision-public/multimodal-material-segmentation#details-of-mcubes-dataset"
+    },
+    {
+      "id": "11",
+      "kind": "published-prediction-example",
+      "source_url": "https://github.com/jayleicn/moment_detr#run-predictions-on-your-own-videos-and-queries"
+    },
+    {
+      "id": "13",
+      "kind": "official-input-reference-answer",
+      "source_url": "https://huggingface.co/dandelin/vilt-b32-finetuned-vqa#how-to-use"
+    },
+    {
+      "id": "17",
+      "kind": "author-model-result",
+      "source_url": "https://github.com/CompVis/stable-diffusion"
+    },
+    {
+      "id": "18",
+      "kind": "author-model-result",
+      "source_url": "https://instruct-pix2pix.timothybrooks.com/"
+    }
+  ],
+  "sources": [
+    {
+      "source": "assets/car.jpg",
+      "width": 560,
+      "height": 420
+    },
+    {
+      "source": "assets/dog.jpg",
+      "width": 560,
+      "height": 420
+    },
+    {
+      "source": "results/03_detection/detections.png",
+      "width": 560,
+      "height": 420
+    },
+    {
+      "source": "assets/house.jpg",
+      "width": 560,
+      "height": 420
+    },
+    {
+      "source": "results/04_segmentation/segmentation.png",
+      "width": 560,
+      "height": 420
+    },
+    {
+      "source": "assets/public-examples/lightglue.webp",
+      "width": 1200,
+      "height": 879
+    },
+    {
+      "source": "results/06_depth_estimation/depth.png",
+      "width": 560,
+      "height": 420
+    },
+    {
+      "source": "assets/public-examples/nerf-view-1.webp",
+      "width": 256,
+      "height": 256
+    },
+    {
+      "source": "assets/public-examples/nerf-view-2.webp",
+      "width": 256,
+      "height": 256
+    },
+    {
+      "source": "assets/public-examples/nerf-view-3.webp",
+      "width": 256,
+      "height": 256
+    },
+    {
+      "source": "assets/public-examples/mcubes-input.webp",
+      "width": 1200,
+      "height": 226
+    },
+    {
+      "source": "results/09_multi_object_tracking/frame_0000.png",
+      "width": 560,
+      "height": 420
+    },
+    {
+      "source": "results/09_multi_object_tracking/frame_0005.png",
+      "width": 560,
+      "height": 420
+    },
+    {
+      "source": "assets/frames/frame_0000.jpg",
+      "width": 560,
+      "height": 420
+    },
+    {
+      "source": "results/10_change_detection/overlay.png",
+      "width": 560,
+      "height": 420
+    },
+    {
+      "source": "assets/public-examples/moment-detr-1.webp",
+      "width": 534,
+      "height": 300
+    },
+    {
+      "source": "assets/public-examples/moment-detr-2.webp",
+      "width": 534,
+      "height": 300
+    },
+    {
+      "source": "assets/cats.png",
+      "width": 560,
+      "height": 420
+    },
+    {
+      "source": "results/14_referring_grounding/grounding.png",
+      "width": 560,
+      "height": 420
+    },
+    {
+      "source": "results/16_referring_segmentation/overlay.png",
+      "width": 560,
+      "height": 420
+    },
+    {
+      "source": "assets/public-examples/stable-diffusion.webp",
+      "width": 1200,
+      "height": 240
+    },
+    {
+      "source": "assets/public-examples/instruct-pix2pix.webp",
+      "width": 1200,
+      "height": 248
+    },
+    {
+      "source": "assets/agriculture/straw6d-rgb.webp",
+      "width": 800,
+      "height": 600
+    },
+    {
+      "source": "assets/agriculture/straw6d-depth.webp",
+      "width": 800,
+      "height": 600
+    },
+    {
+      "source": "assets/agriculture/straw6d-mask.webp",
+      "width": 800,
+      "height": 600
+    },
+    {
+      "source": "assets/agriculture/aoc-detection.webp",
+      "width": 1200,
+      "height": 662
+    },
+    {
+      "source": "assets/agriculture/fruit3d-localization.webp",
+      "width": 1200,
+      "height": 622
+    },
+    {
+      "source": "assets/agriculture/strawberry-measurement.webp",
+      "width": 1200,
+      "height": 874
+    },
+    {
+      "source": "assets/agriculture/fruit3d-counting.webp",
+      "width": 1200,
+      "height": 746
+    },
+    {
+      "source": "assets/agriculture/picking-keypoints.webp",
+      "width": 519,
+      "height": 390
+    },
+    {
+      "source": "assets/agriculture/plantseg.webp",
+      "width": 1200,
+      "height": 410
+    },
+    {
+      "source": "assets/agriculture/agriscope-referring.webp",
+      "width": 1200,
+      "height": 277
+    },
+    {
+      "source": "assets/agriculture/apple-tracking-1.webp",
+      "width": 600,
+      "height": 450
+    },
+    {
+      "source": "assets/agriculture/apple-tracking-2.webp",
+      "width": 600,
+      "height": 450
+    },
+    {
+      "source": "assets/public-examples/nerf-orbit.webp",
+      "width": 256,
+      "height": 256,
+      "pages": 40
+    }
+  ],
+  "outputs": [
+    "index.html",
+    "web\\dist\\index.html"
+  ]
+}

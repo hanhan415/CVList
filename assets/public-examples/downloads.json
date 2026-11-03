@@ -1,0 +1,110 @@
+{
+  "lightglue": {
+    "source_url": "https://raw.githubusercontent.com/cvg/LightGlue/main/assets/easy_hard.jpg",
+    "download_bytes": 757434,
+    "download_sha256": "6d3bb393ae2a0fc7d7e35f1e0f7dfab7b160bd85c043622c5cbefc17f32d481f",
+    "files": [
+      "assets/public-examples/lightglue.webp"
+    ]
+  },
+  "nerf": {
+    "source_url": "https://raw.githubusercontent.com/bmild/nerf/master/imgs/pipeline.jpg",
+    "download_bytes": 350277,
+    "download_sha256": "ce0953bccf8966af8c23fdfa19f171ee26d25fb9b82d717298a8df5c04419283",
+    "files": [
+      "assets/public-examples/nerf.webp"
+    ]
+  },
+  "mcubes-input": {
+    "source_url": "https://raw.githubusercontent.com/kyotovision-public/multimodal-material-segmentation/main/img/Fig1.png",
+    "download_bytes": 1502393,
+    "download_sha256": "64da07cdd9d83e0323148ff275f7918668d0d95ff4e7a293869f1187baf0d97c",
+    "files": [
+      "assets/public-examples/mcubes-input.webp"
+    ]
+  },
+  "mcubes-labels": {
+    "source_url": "https://raw.githubusercontent.com/kyotovision-public/multimodal-material-segmentation/main/img/Fig3.png",
+    "download_bytes": 610707,
+    "download_sha256": "ec26bd3859c24fda1c77bc6cf3cf1ed4deff9351f84a4f83f7dd4bb0124055fa",
+    "files": [
+      "assets/public-examples/mcubes-labels.webp"
+    ]
+  },
+  "stable-diffusion": {
+    "source_url": "https://raw.githubusercontent.com/CompVis/stable-diffusion/main/assets/stable-samples/txt2img/merged-0006.png",
+    "download_bytes": 2638534,
+    "download_sha256": "1d55ba7d103da275b4612976e93f405fcb593f7e6a6fda31f2e180b41c8e4f59",
+    "files": [
+      "assets/public-examples/stable-diffusion.webp"
+    ]
+  },
+  "instruct-pix2pix": {
+    "source_url": "https://instruct-pix2pix.timothybrooks.com/cityscape.jpg",
+    "download_bytes": 177253,
+    "download_sha256": "dce73448f781ba9fa8d546bc0c5f634ce6debe94424134ae90c256dfb934acbc",
+    "files": [
+      "assets/public-examples/instruct-pix2pix.webp"
+    ]
+  },
+  "tiny-nerf": {
+    "source_url": "https://raw.githubusercontent.com/bmild/nerf/master/tiny_nerf.ipynb",
+    "download_bytes": 2888726,
+    "download_sha256": "025987e29a6c3d856993ff4ebc2889a748bf9a67bd013ccb7319948cb8e4c178",
+    "files": [
+      "assets/public-examples/tiny-nerf-result.webp"
+    ],
+    "extraction": "last saved PNG output of notebook cell 8"
+  },
+  "moment-detr": {
+    "source_url": "https://raw.githubusercontent.com/jayleicn/moment_detr/main/run_on_video/example/RoripwjYFp8_60.0_210.0.mp4",
+    "download_bytes": 10404801,
+    "download_sha256": "e847dbe79219afc6d70225117684a7e03563e1580b6f455ece13f89747cb5a50",
+    "files": [
+      "assets/public-examples/moment-detr-0.webp",
+      "assets/public-examples/moment-detr-1.webp",
+      "assets/public-examples/moment-detr-2.webp"
+    ],
+    "frame_seconds": [
+      5,
+      108,
+      120
+    ],
+    "query": "Chef makes pizza and cuts it up.",
+    "published_prediction_rank": 3,
+    "published_prediction_seconds": [
+      105.9434,
+      122.0372
+    ],
+    "ground_truth_seconds": [
+      106,
+      122
+    ],
+    "prediction_source": "https://github.com/jayleicn/moment_detr#run-predictions-on-your-own-videos-and-queries"
+  },
+  "nerf-render-frame": {
+    "source_url": "https://bmild.github.io/nerf/lego_200k_256w.gif",
+    "files": [
+      "assets/public-examples/nerf-0.webp"
+    ],
+    "derived_sha256": "1c340ba8d564d159fa184428e35635a190d9278089785bc34b749a5251407929",
+    "extraction": "First successfully decoded frame of the author-published NeRF GIF; later truncated frames were not used."
+  },
+  "nerf-multiview": {
+    "source_url": "https://bmild.github.io/nerf/lego_200k_256w.gif",
+    "download_bytes": 995432,
+    "download_sha256": "5065713764ad7fbbdd3a72ee65094c8109d6e045280520de0db330b256480276",
+    "files": [
+      "assets/public-examples/nerf-orbit.webp",
+      "assets/public-examples/nerf-view-1.webp",
+      "assets/public-examples/nerf-view-2.webp",
+      "assets/public-examples/nerf-view-3.webp"
+    ],
+    "frame_indices": [
+      0,
+      13,
+      26
+    ],
+    "animation_frames": 40
+  }
+}

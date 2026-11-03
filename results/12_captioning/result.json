@@ -1,0 +1,11 @@
+{
+  "model": "onnx-community/Florence-2-base-ft",
+  "revision": "e88a44eaf3791a35eae0c5a47b3dbcd36e67eb6f",
+  "weight_format": "trained ONNX; q8 except quality FP32",
+  "device": "CPU",
+  "task": "image captioning",
+  "input": "D:\\project\\CVList\\assets\\car.jpg",
+  "caption": "A green car is parked in front of a yellow building. There is a brown door on the building.",
+  "raw": "</s><s>A green car is parked in front of a yellow building. There is a brown door on the building. </s>",
+  "truncated": false
+}

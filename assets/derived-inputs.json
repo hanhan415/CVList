@@ -1,0 +1,6 @@
+{
+  "query_cat.jpg": {
+    "source": "cats.png",
+    "operation": "left 60 percent crop, used only as retrieval query"
+  }
+}

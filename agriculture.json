@@ -1,0 +1,262 @@
+{
+  "title": "农业数据的任务组合",
+  "intro": "已有农业数据集包含目标检测、图像分割两类标注，并提供深度信息，分别描述目标位置、区域轮廓和空间远近。",
+  "categories": [
+    {
+      "name": "优先复用现有标注",
+      "items": [
+        {
+          "name": "RGB-D 多任务检测",
+          "flow": "RGB-D 输入 + 检测 / 分割监督 → 目标类别、位置和轮廓",
+          "example": "同时检测果实、分割果实轮廓，并利用深度区分前后遮挡。",
+          "condition": "同一图像的各类标注需对齐；可比较纯 RGB、RGB-D 和联合训练的效果。",
+          "figures": [
+            {
+              "file": "assets/agriculture/straw6d-rgb.webp",
+              "caption": "Straw6D：合成 RGB 输入"
+            },
+            {
+              "file": "assets/agriculture/straw6d-depth.webp",
+              "caption": "Straw6D：同一视角的深度可视化"
+            },
+            {
+              "file": "assets/agriculture/straw6d-mask.webp",
+              "caption": "Straw6D：对应的果实实例标注"
+            },
+            {
+              "file": "assets/agriculture/aoc-detection.webp",
+              "caption": "AOC：另一真实场景的草莓检测与分割结果"
+            }
+          ],
+          "image_note": "前三图展示配套的 RGB、深度与标注；第四图展示草莓检测、分割与成熟度识别的结果形式。",
+          "sources": [
+            {
+              "name": "Straw6D 合成数据集",
+              "url": "https://github.com/alanli2099/Straw6D"
+            },
+            {
+              "name": "AOC Fruit Detector",
+              "url": "https://github.com/LCAS/aoc_fruit_detector"
+            }
+          ],
+          "id": "agriculture-rgbd"
+        },
+        {
+          "name": "三维目标定位",
+          "flow": "检测 / 实例分割 + 深度 → 目标在相机坐标系中的三维位置",
+          "example": "找到一个果实，并估计它相对相机的左右、上下位置与距离。",
+          "condition": "需有尺度的深度和相机内参；输出位置点不等于完整三维检测框。",
+          "figures": [
+            {
+              "file": "assets/agriculture/fruit3d-localization.webp",
+              "caption": "Fruit3DGS：彩色点为果实点集，黑色圆点为估计位置，黑色方块为参考位置"
+            }
+          ],
+          "image_note": "将每个果实的中心表示为空间坐标，可用于机器人靠近目标；图中还给出了坐标轴与位置误差的对照。",
+          "sources": [
+            {
+              "name": "Fruit3DGS 作者项目",
+              "url": "https://github.com/SamueleMara/Fruit3DGS"
+            }
+          ],
+          "id": "agriculture-localization"
+        },
+        {
+          "name": "目标尺寸与形态测量",
+          "flow": "分割掩码 + 深度 → 可见部分的尺寸与几何特征",
+          "example": "估计果实宽度、叶片可见表面面积，或植株的可见高度。",
+          "condition": "实际尺寸需相机标定；完整体积或被遮挡结构通常还需要多视角。",
+          "figures": [
+            {
+              "file": "assets/agriculture/strawberry-measurement.webp",
+              "caption": "草莓三维测量：包围盒、果实体点云、萼片跨度及表面网格（论文图 3）"
+            }
+          ],
+          "image_note": "利用点云的包围盒和标定尺度估计尺寸，并从三维表面提取形态特征；该图采用多视角重建的草莓点云。",
+          "sources": [
+            {
+              "name": "He 等，Plant Methods，2017",
+              "url": "https://link.springer.com/article/10.1186/s13007-017-0243-x"
+            }
+          ],
+          "id": "agriculture-measurement"
+        },
+        {
+          "name": "三维点云实例分割",
+          "flow": "RGB-D + 实例掩码 → 每个物体对应的三维点集",
+          "example": "把相邻果实分成独立点云，分析它们的空间分布与可见形状。",
+          "condition": "需相机内参；语义掩码若没有实例编号，需先区分同类别的不同物体。",
+          "figures": [
+            {
+              "file": "assets/agriculture/fruit3d-counting.webp",
+              "caption": "三组苹果场景的 RGB 渲染视图",
+              "crop": [
+                0.43,
+                0,
+                0.345,
+                0.22
+              ]
+            },
+            {
+              "file": "assets/agriculture/fruit3d-counting.webp",
+              "caption": "对应的三维实例聚类：不同颜色区分不同果实",
+              "crop": [
+                0.43,
+                0.77,
+                0.345,
+                0.2
+              ]
+            }
+          ],
+          "image_note": "从同一公开结果图中放大苹果场景及其三维聚类。把各个果实分开后，可以分别定位、计数和分析形状。",
+          "sources": [
+            {
+              "name": "Fruit3DGS 作者项目",
+              "url": "https://github.com/SamueleMara/Fruit3DGS"
+            }
+          ],
+          "id": "agriculture-pointcloud"
+        }
+      ]
+    },
+    {
+      "name": "补充任务标注或连续数据后拓展",
+      "items": [
+        {
+          "name": "采摘点与抓取姿态检测",
+          "flow": "目标检测 / 分割 + 深度 → 接触点、切割点或抓取方向",
+          "example": "先找到果实和果柄，再预测夹持果实的位置或切断果柄的位置。",
+          "condition": "需相应关键点或抓取姿态标注；控制机械臂还需手眼标定和避障。",
+          "figures": [
+            {
+              "file": "assets/agriculture/picking-keypoints.webp",
+              "caption": "草莓关键点与可采摘性识别：果实框、方向线和关键点共同描述采摘目标"
+            }
+          ],
+          "image_note": "观察果实轮廓和方向线，采摘感知需要从“找到果实”进一步确定接触位置与果柄方向。",
+          "sources": [
+            {
+              "name": "Tafuro 等，ICRA 2022 作者项目",
+              "url": "https://github.com/rick-dn/robofruit"
+            }
+          ],
+          "id": "agriculture-picking"
+        },
+        {
+          "name": "病斑分割与受损比例评估",
+          "flow": "叶片掩码 + 病斑掩码 → 受损区域及可见面积占比",
+          "example": "分割叶片上的病斑，计算病斑像素占叶片可见像素的比例。",
+          "condition": "需叶片与病斑标注；二维占比不能直接代表完整叶面积或农学病情等级。",
+          "figures": [
+            {
+              "file": "assets/agriculture/plantseg.webp",
+              "caption": "PlantSeg：叶片病斑的区域标注",
+              "crop": [
+                0,
+                0,
+                0.25,
+                0.5
+              ]
+            },
+            {
+              "file": "assets/agriculture/plantseg.webp",
+              "caption": "PlantSeg：另一叶片上的多处病斑",
+              "crop": [
+                0.5,
+                0.5,
+                0.25,
+                0.5
+              ]
+            }
+          ],
+          "image_note": "红色轮廓圈出病斑区域。再配合整片叶子的掩码，就能计算病斑在叶片可见区域中的面积占比。",
+          "sources": [
+            {
+              "name": "PlantSeg 数据集作者项目",
+              "url": "https://github.com/tqwei05/PlantSeg"
+            }
+          ],
+          "id": "agriculture-lesion"
+        },
+        {
+          "name": "语言引导检测与分割",
+          "flow": "图像 + 文字描述 → 指定农业目标的检测框或掩码",
+          "example": "用文字指定图中的花朵，输出对应的目标掩码；也可指定农业数据中的某个果实或叶片。",
+          "condition": "需补充描述与目标的对应关系；复杂大小、方位关系要单独评测。",
+          "figures": [
+            {
+              "file": "assets/agriculture/agriscope-referring.webp",
+              "caption": "输入：农业场景中的花朵",
+              "crop": [
+                0,
+                0,
+                0.16666666666666666,
+                1
+              ]
+            },
+            {
+              "file": "assets/agriculture/agriscope-referring.webp",
+              "caption": "AgriScope：语言指定目标的分割结果",
+              "crop": [
+                0.8333333333333334,
+                0,
+                0.16666666666666666,
+                1
+              ]
+            }
+          ],
+          "image_note": "文字描述指定要分割的对象，输出区域对应图中的花朵；类似方式可用于指定果实、叶片或病斑。",
+          "sources": [
+            {
+              "name": "AgriScope 作者公开结果",
+              "url": "https://github.com/boudiafA/AgriScope"
+            }
+          ],
+          "id": "agriculture-language"
+        },
+        {
+          "name": "时序跟踪与去重计数",
+          "flow": "连续图像 + 检测 / 分割 + 可选深度 → 轨迹与计数结果",
+          "example": "移动相机沿植株拍摄，跟踪同一果实，减少连续画面中的重复计数。",
+          "condition": "需连续帧及目标身份标注；跨视角去重还可结合相机位姿与深度。",
+          "figures": [
+            {
+              "file": "assets/agriculture/apple-tracking-1.webp",
+              "caption": "第 4 帧：识别苹果并为各目标关联 ID"
+            },
+            {
+              "file": "assets/agriculture/apple-tracking-2.webp",
+              "caption": "第 12 帧：更新同一批苹果的位置与跟踪状态"
+            }
+          ],
+          "image_note": "对照连续画面中的苹果 ID：同一目标跨帧关联后，计数时可按唯一 ID 汇总，减少重复计算。",
+          "sources": [
+            {
+              "name": "Apple-Tracking 作者演示",
+              "url": "https://github.com/rishabhpahuja/Apple-Tracking"
+            }
+          ],
+          "id": "agriculture-tracking"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "RGB-D 与点云：Open3D",
+      "url": "https://open3d.org/docs/latest/tutorial/geometry/rgbd_image.html"
+    },
+    {
+      "name": "抓取姿态：Contact-GraspNet",
+      "url": "https://github.com/NVlabs/contact_graspnet"
+    },
+    {
+      "name": "图文定位与分割：Grounded-SAM",
+      "url": "https://github.com/IDEA-Research/Grounded-Segment-Anything"
+    },
+    {
+      "name": "目标跟踪：ByteTrack",
+      "url": "https://github.com/FoundationVision/ByteTrack"
+    }
+  ]
+}

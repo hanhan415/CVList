@@ -1,0 +1,21 @@
+{
+  "name": "cvlist-real-model-demos",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Small real-model computer vision examples with a shared ONNX model cache",
+  "scripts": {
+    "setup": "node setup.mjs",
+    "list": "node run.mjs --list",
+    "demo": "node run.mjs",
+    "verify": "node verify.mjs",
+    "storage": "node storage.mjs",
+    "web": "node serve.mjs",
+    "build:web": "node build-web.mjs",
+    "verify:web": "node verify-web.mjs"
+  },
+  "dependencies": {
+    "@huggingface/transformers": "3.8.1"
+  },
+  "engines": {"node": ">=20"}
+}

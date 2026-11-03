@@ -1,0 +1,131 @@
+{
+  "aoc-detection": {
+    "source_url": "https://raw.githubusercontent.com/LCAS/aoc_fruit_detector/main/scripts/data/figure/output_fig.png",
+    "download_bytes": 2418645,
+    "source_sha256": "be535b947cf495efe53d8bd770e069e5f4426538f60093ef1fa47bf759289bd7",
+    "file": "assets/agriculture/aoc-detection.webp",
+    "original_size": [
+      1991,
+      1099
+    ],
+    "retained_bytes": 201196
+  },
+  "fruit3d-localization": {
+    "source_url": "https://raw.githubusercontent.com/SamueleMara/Fruit3DGS/main/assets/results_localization.png",
+    "download_bytes": 201002,
+    "source_sha256": "3336811d04a7cea1b52b8414fa9bec5cef319ac339d112966d0e2326cdf927b1",
+    "file": "assets/agriculture/fruit3d-localization.webp",
+    "original_size": [
+      3152,
+      1633
+    ],
+    "retained_bytes": 41626
+  },
+  "fruit3d-counting": {
+    "source_url": "https://raw.githubusercontent.com/SamueleMara/Fruit3DGS/main/assets/results_counting.png",
+    "download_bytes": 7998649,
+    "source_sha256": "490c79b2d7bcdf236f8b5228f280ad5167b5f5b915aabf78517add5b3ed67f20",
+    "file": "assets/agriculture/fruit3d-counting.webp",
+    "original_size": [
+      3525,
+      2193
+    ],
+    "retained_bytes": 256620
+  },
+  "plantseg": {
+    "source_url": "https://raw.githubusercontent.com/tqwei05/PlantSeg/main/image/seg_samples.png",
+    "download_bytes": 4872686,
+    "source_sha256": "a9db9b41adf64d6fce600d777a1c81052257ef80c0c8747d1be9638edbab305e",
+    "file": "assets/agriculture/plantseg.webp",
+    "original_size": [
+      2263,
+      774
+    ],
+    "retained_bytes": 212470
+  },
+  "agriscope-referring": {
+    "source_url": "https://raw.githubusercontent.com/boudiafA/AgriScope/main/images/referring_segmentation_comparison.png",
+    "download_bytes": 1385418,
+    "source_sha256": "d2d30b1aa3b8923878c54e0393fda9c3040844fdb5e9d812817a0c7996ef922b",
+    "file": "assets/agriculture/agriscope-referring.webp",
+    "original_size": [
+      2400,
+      553
+    ],
+    "retained_bytes": 82658
+  },
+  "tracking": {
+    "source_url": "https://raw.githubusercontent.com/rishabhpahuja/Apple-Tracking/main/apple_tracker.gif",
+    "download_bytes": 3986362,
+    "source_sha256": "3a16e60fd7975dca2d94caca59399975484daad5f8a70fdd57bcc7be740fc1b5",
+    "files": [
+      "assets/agriculture/apple-tracking-1.webp",
+      "assets/agriculture/apple-tracking-2.webp"
+    ],
+    "frame_indices": [
+      75,
+      225
+    ],
+    "frame_count": 300
+  },
+  "measurement-paper": {
+    "source_url": "https://centaur.reading.ac.uk/74328/1/s13007-017-0243-x.pdf",
+    "download_bytes": 1416507,
+    "source_sha256": "ec46f23bc98a573deb195c4a866a1fdcb9de100d6a19403ebbe86245e90ea2ae",
+    "retained_pdf": false
+  },
+  "straw6d-rgb": {
+    "source_url": "https://raw.githubusercontent.com/alanli2099/Straw6D/main/images/0001.png",
+    "download_bytes": 309556,
+    "source_sha256": "4c5f6dcb2907634cbd996eba3fab73c4dc327a8ef9aa6f73c769b691fdb7800b",
+    "file": "assets/agriculture/straw6d-rgb.webp",
+    "original_size": [
+      800,
+      600
+    ],
+    "original_mode": "RGB",
+    "retained_bytes": 63570
+  },
+  "straw6d-depth": {
+    "source_url": "https://raw.githubusercontent.com/alanli2099/Straw6D/main/depth_images/0001.png",
+    "download_bytes": 30817,
+    "source_sha256": "0c5a31a21931b7269b5f7963951dc83fb53790cc99ebf0d4fc9361fbbedef06b",
+    "file": "assets/agriculture/straw6d-depth.webp",
+    "original_size": [
+      800,
+      600
+    ],
+    "original_mode": "RGB",
+    "retained_bytes": 18850
+  },
+  "straw6d-mask": {
+    "source_url": "https://raw.githubusercontent.com/alanli2099/Straw6D/main/colored_maps/0001.png",
+    "download_bytes": 4316,
+    "source_sha256": "db3c39b89649d6f13fbb499c7ed5db5de71176bba87dbe54fbacac737f9a8271",
+    "file": "assets/agriculture/straw6d-mask.webp",
+    "original_size": [
+      800,
+      600
+    ],
+    "original_mode": "RGB",
+    "retained_bytes": 6792
+  },
+  "picking-keypoints": {
+    "source_url": "https://raw.githubusercontent.com/rick-dn/robofruit/main/icra_2022_strawberry_final.pdf.png",
+    "download_bytes": 469467,
+    "source_sha256": "23b7126cef4b11dda18e69d2988fbe1de7176e2b8ead3fca2d069c1b8b3be1f8",
+    "file": "assets/agriculture/picking-keypoints.webp",
+    "original_size": [
+      519,
+      390
+    ],
+    "original_mode": "RGBA",
+    "retained_bytes": 92794
+  },
+  "strawberry-measurement": {
+    "source_url": "https://link.springer.com/article/10.1186/s13007-017-0243-x",
+    "file": "assets/agriculture/strawberry-measurement.webp",
+    "extraction": "Original figure 3 raster embedded in PDF page 5, xref 949; no new annotations",
+    "retained_bytes": 280814
+  }
+}
